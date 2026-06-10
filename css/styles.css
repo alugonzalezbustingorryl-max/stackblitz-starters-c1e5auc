@@ -133,7 +133,16 @@ table, tr, td,th{
   width: 200px;
   }
   
-
+.videos_locales{
+  background-color: #aaa;
+  width: 630px;
+  height: 320px;
+  border: #000 7px;
+  box-shadow: #555;
+  text-align: center;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
 
 /*comienazo del footer*/
 
