@@ -210,7 +210,14 @@ width: 100px;
   grid-template-columns: 1fr 1fr;
 }
 .pais {
-  grid-column: span 2;
+  grid-column;
+  
+  
+  
+  
+  
+  
+  span 2;
   padding: 10px;
   font-weight: bold;
   font-size: 13px;
@@ -233,4 +240,28 @@ width: 100px;
 }
 .paises  .foto  img{
   width: 100%;
+}
+/*entradas*/
+#formulario{
+  width: 500%;
+  height: 800px;
+  float: left;
+  background-color: cadetblue;
+  padding: 25px;
+}
+#formulario input{
+width: 100%;
+
+
+}
+#formulario label{
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-size: 15px;
+
+}
+#formulario h2{
+text-align: center;
+text-shadow:2px 2px 4px #555;
+font-size: 40px;
+
 }
