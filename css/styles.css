@@ -73,7 +73,7 @@ nav a {
 
 section{
   width: 900px;
-  height: 400px;
+  padding: 20px;
   background-color: #555;
   margin: auto ;
   margin-bottom: 15px;
@@ -211,12 +211,6 @@ width: 100px;
 }
 .pais {
   grid-column;
-  
-  
-  
-  
-  
-  
   span 2;
   padding: 10px;
   font-weight: bold;
