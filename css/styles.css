@@ -83,7 +83,7 @@ section{
   justify-content: center;
 }
 section div{
-  width: 350px;
+  width: 250px;
   background-color: yellow;
   height: 200px;
   margin: 1px;
@@ -95,22 +95,25 @@ section div{
   box-shadow: 7PX 5PX gray;
   border-radius: 15px;
 }
-#eeuu{
-  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Flag_of_the_United_States_%28Pantone%29.svg/250px-Flag_of_the_United_States_%28Pantone%29.svg.png);
-  background-repeat: no-repeat;
+#eeuu {
+  background-image: url(../img/banderaeeuu.svg);
   background-size: cover;
-}
-#mx{
-  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Flag_of_Mexico.svg/250px-Flag_of_Mexico.svg.png);
   background-repeat: no-repeat;
-  background-size: cover;
 }
 
-#ca{
-  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Flag_of_Canada_%283-2%29.svg/3840px-Flag_of_Canada_%283-2%29.svg.png);
-  background-repeat: no-repeat;
+#mx {
+  background-image: url(../img/banderamexico.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
 }
+
+
+#can{
+  background-image: url(../img/banderacan.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+  
 #video{
   width: 600px;
   height: 300px;
@@ -191,24 +194,30 @@ h1 {
   font-size: 1.5rem;
 }
 .campeones {
-display: grid;
-grid-template-columns: 1fr 3fr;/*25% para continente,75% para paises */
-border: 2px solid black;
-width: 100px;
-  
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  /* 25% para continente, 75% para paises*/
+  border: 2px solid black;
+  width: 100%;
+
 }
-/*Columna izquierda: Continente ocupara todo el alto disponible automaticamente */
-.continente{
-  border-right:2px solid #000;
+
+/*Columna Izquierda: Continente ocupará todo el alto disponible automaticamente*/
+.continente {
+  border-right: 2px solid black;
   padding: 15px 10px;
   font-weight: bold;
   font-size: 14px;
+
 }
 
+/*Columna Derecha: Se convierte en otro Grid para organizar el contenido interno*/
 .paises {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+
+/* El título del pais ocupa las dos columnas*/
 .pais {
   grid-column: span 2;
   padding: 10px;
@@ -216,45 +225,59 @@ width: 100px;
   font-size: 13px;
   border-bottom: 2px solid black;
 }
+
 .foto {
   min-height: 120px;
   padding: 35px 10px 10px 10px;
   font-size: 11px;
-  border-right: 2px solid black;
+  border-bottom: 2px solid black;
 }
-.foto:nth-of-type(odd){
+
+.foto :nth-of-type(odd) {
   border-right: 2px solid black;
+
 }
+
+/* La reseña se salta al fondo ocupando las dos columnas*/
 .resenia {
   grid-column: span 2;
   padding: 10px;
   min-height: 80px;
   font-size: 11px;
 }
-.paises  .foto  img{
+
+/*datos de campeones*/
+
+.paises .foto img {
   width: 100%;
+
 }
-/*entradas*/
-#formulario{
-  width: 500%;
+
+.resenia p {
+  font-size: 16px;
+}
+
+/****entradas****/
+
+#formulario {
+  width: 500px;
   height: 800px;
   float: left;
-  background-color: cadetblue;
+  background-color: rgb(72, 137, 197);
   padding: 25px;
 }
-#formulario input{
-width: 100%;
 
-
+#formulario input {
+  width: 100%;
 }
-#formulario label{
-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-font-size: 15px;
 
+#formulario label {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 20px;
 }
-#formulario h2{
-text-align: center;
-text-shadow:2px 2px 4px #555;
-font-size: 40px;
 
+#formulario h2 {
+  text-align: center;
+  text-shadow:2px 2px 4px #555;
+  font-size: 30px;
 }
